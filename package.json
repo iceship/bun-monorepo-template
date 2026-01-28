@@ -1,24 +1,32 @@
 {
-	"name": "workspace-test",
-	"module": "index.ts",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "bun --filter api dev & bun --filter web dev",
-		"dev:api": "bun --filter api dev",
-		"dev:web": "bun --filter web dev",
-		"lint": "biome check .",
-		"format": "biome format --write ."
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.3.13",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5"
-	},
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	]
+  "name": "workspace-test",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --filter api dev & bun --filter web dev",
+    "dev:api": "bun --filter api dev",
+    "dev:web": "bun --filter web dev",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.13",
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue,json,jsonc,md,mdx,yml,yaml}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
