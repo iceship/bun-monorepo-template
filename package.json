@@ -1,5 +1,5 @@
 {
-  "name": "workspace-test",
+  "name": "bun-monorepo-template",
   "module": "index.ts",
   "type": "module",
   "private": true,
@@ -15,7 +15,8 @@
     "@biomejs/biome": "2.3.13",
     "@types/bun": "latest",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.2.7",
+    "typescript": "^5"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue,json,jsonc,md,mdx,yml,yaml}": [
