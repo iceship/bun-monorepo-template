@@ -1,21 +1,24 @@
 {
-  "name": "workspace-test",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun --filter api dev & bun --filter web dev",
-    "dev:api": "bun --filter api dev",
-    "dev:web": "bun --filter web dev"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.3.13",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "workspaces": [
-    "apps/*"
-  ]
+	"name": "workspace-test",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "bun --filter api dev & bun --filter web dev",
+		"dev:api": "bun --filter api dev",
+		"dev:web": "bun --filter web dev",
+		"lint": "biome check .",
+		"format": "biome format --write ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.13",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
 }
