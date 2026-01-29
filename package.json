@@ -24,7 +24,7 @@
       "biome check --write --no-errors-on-unmatched"
     ],
     "apps/web/**/*.{js,jsx,ts,tsx,vue}": [
-      "cd apps/web && eslint --fix"
+      "bun --cwd apps/web eslint --fix"
     ]
   },
   "peerDependencies": {
