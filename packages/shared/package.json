@@ -6,9 +6,7 @@
   "exports": {
     ".": "./src/index.ts"
   },
-  "scripts": {
-
-  },
+  "scripts": {},
   "devDependencies": {
     "@biomejs/biome": "2.3.13"
   }

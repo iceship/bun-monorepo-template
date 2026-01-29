@@ -1,3 +1,9 @@
 {
-  "recommendations": ["biomejs.biome", "vue.volar"]
+  "recommendations": [
+    "biomejs.biome",
+    "vue.volar",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "yoavbls.pretty-ts-errors"
+  ]
 }

@@ -8,7 +8,7 @@
     "dev:api": "bun --filter api dev",
     "dev:web": "bun --filter web dev",
     "db:push": "bun --filter api db:push",
-    "lint": "biome check .",
+    "lint": "biome check . && bun --filter web lint",
     "format": "biome format --write .",
     "prepare": "husky"
   },
