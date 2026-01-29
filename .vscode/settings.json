@@ -19,70 +19,30 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
+      "source.fixAll.eslint": "always",
       "source.fixAll.biome": "never",
       "source.organizeImports": "never"
     }
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "eslint.rules.customizations": [
-    {
-      "rule": "style/*",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "format/*",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-indent",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-spacing",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-spaces",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-order",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-dangle",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*-newline",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*quotes",
-      "severity": "off",
-      "fixable": true
-    },
-    {
-      "rule": "*semi",
-      "severity": "off",
-      "fixable": true
-    }
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
   ],
   "eslint.validate": [
     "javascript",
@@ -90,11 +50,5 @@
     "typescript",
     "typescriptreact",
     "vue"
-  ],
-  "eslint.workingDirectories": [
-    {
-      "directory": "apps/web",
-      "changeProcessCWD": true
-    }
   ]
 }
